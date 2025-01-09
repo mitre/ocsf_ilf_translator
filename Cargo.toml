@@ -1,0 +1,28 @@
+[package]
+name = "ilf_ocsf_protobuf"
+version = "0.2.1"
+edition = "2021"
+
+[dependencies]
+protobuf = "3.5.1"
+protobuf-json-mapping = "3.5.1"
+serde = { version = "1.0.210", features = ["derive"] }
+serde_json = "1.0.128"
+ilf-ocsf-macro = { path = "./ilf-ocsf-macro" }
+seal_lib = { git = "https://github.com/mitre/seal_lib", tag = "v1.7.1" }
+chrono = "0.4.26"
+enum_common_fields = "0.7.0"
+structopt = "0.3.26"
+
+[build-dependencies]
+protobuf = "3.5.1"
+protobuf-codegen = "3.5.1"
+protoc-bin-vendored = "3.0.0"
+
+[[bin]]
+name = "json_to_ilf"
+path = "src/main.rs"
+
+# uncomment to use a local version of seal_lib
+# [patch."https://github.com/mitre/seal_lib"]
+# seal_lib = { path = "../seal_lib" }
