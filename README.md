@@ -1,8 +1,8 @@
-# ILF OCSF Protobuf
+# MITRE Intermediate Log Format (ILF) Open Cybersecurity Schema Format (OCSF) Protobuf
 
-ILF OCSF Protobuf translates OCSF json logs to ILF logs using the OCSF protobuf schema. 
+ILF to [OCSF](https://github.com/ocsf) Protobuf translates OCSF json logs to ILF logs using the OCSF protobuf schema. 
 
-This is designed to operate on one OCSF log file at a time, limiting its use in production environments.
+*Important Note*: This is designed to operate on one OCSF log file at a time to test the mapping from OCSF events to ILF. This is not designed to be used in production environments.
 
 ## Version
 0.2.1
